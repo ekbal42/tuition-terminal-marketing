@@ -241,11 +241,11 @@ a.btn-gdark {
   border: 1px solid #3b3c3d;
 }
 
-.nav-tabs>li>button.active {
+.nav-tabs > li > button.active {
   border: 2px solid #3378c2 !important;
 }
 
-.nav-tabs>li>button {
+.nav-tabs > li > button {
   box-shadow: none !important;
 }
 
