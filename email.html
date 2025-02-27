@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/color_palets.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/custom-checkbox.css" />
     <link rel="stylesheet" href="/css/tab-style.css" />
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
@@ -18,7 +16,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/assets/style.css" />
-    <title>All Popup</title>
+    <title>All Notice</title>
   </head>
   <body>
     <!-- navbar starts here -->
@@ -42,7 +40,6 @@
       </div>
     </nav>
     <!-- navbar ends here -->
-
     <div class="container-fluid">
       <div class="row">
         <!-- sidebar starts here -->
@@ -87,7 +84,6 @@
                     <i class="bi bi-chevron-left arrow-icon"></i>
                   </div>
                 </div>
-
                 <div class="collapse show" id="offer-collapse">
                   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                     <li
@@ -102,11 +98,11 @@
                     </li>
                     <li
                       class="ms-4 px-3 py-1 my-3"
-                      style="border-left: 3px solid #89c33f"
+                      style="border-left: 3px solid #898e99"
                     >
                       <a
                         href="all-popup.html"
-                        class="text-primary text-decoration-none text-nowrap"
+                        class="text-gray-800 text-decoration-none text-nowrap"
                         >All Popup</a
                       >
                     </li>
@@ -122,11 +118,11 @@
                     </li>
                     <li
                       class="ms-4 px-3 py-1 my-3"
-                      style="border-left: 3px solid #898e99"
+                      style="border-left: 3px solid #89c33f"
                     >
                       <a
                         href="email.html"
-                        class="text-gray-800 text-decoration-none text-nowrap"
+                        class="text-primary text-decoration-none text-nowrap"
                         >Email Marketing</a
                       >
                     </li>
@@ -148,7 +144,7 @@
                   >All Notice Dashboard</a
                 >
                 <a
-                  class="text-decoration-none text-gray-800 text-nowrap active-border"
+                  class="text-decoration-none text-gray-800 text-nowrap"
                   href="all-popup.html"
                   >All Popup Images</a
                 >
@@ -158,7 +154,7 @@
                   >SMS Marketing</a
                 >
                 <a
-                  class="text-decoration-none text-gray-800 text-nowrap"
+                  class="text-decoration-none text-gray-800 text-nowrap active-border"
                   href="email.html"
                   >Email Marketing</a
                 >
@@ -168,318 +164,74 @@
               </div>
             </div>
             <!-- mini nav ends here -->
+            <!-- main content section starts here -->
             <!-- submit form starts here -->
             <div
               class="mx-3 bg-white shadow-lg p-4 rounded-3 mb-4 px-lg-5 py-lg-4"
             >
-              <ul
-                class="nav nav-tabs border-0 d-flex gap-3"
-                id="myTab"
-                role="tablist"
-              >
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="tab-button active"
-                    id="group-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#group"
-                    type="button"
-                    role="tab"
-                    aria-controls="group"
-                    aria-selected="true"
-                  >
-                    Group
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="tab-button"
-                    id="unit-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#unit"
-                    type="button"
-                    role="tab"
-                    aria-controls="unit"
-                    aria-selected="false"
-                  >
-                    Unit
-                  </button>
-                </li>
-              </ul>
-
-              <div class="tab-content" id="myTabContent">
-                <div
-                  class="tab-pane fade show active"
-                  id="group"
-                  role="tabpanel"
-                  aria-labelledby="home-group"
-                >
-                  <div class="mt-4">
-                    <div class="d-flex gap-5">
-                      <div>
-                        <p class="mb-2" style="font-weight: 500">Popup Click</p>
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefaulte"
-                          id="flexRadioDefault1"
-                          checked
-                        />
-                      </div>
-                      <div>
-                        <p class="mb-2" style="font-weight: 500">
-                          Property Click
-                        </p>
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefaulte"
-                          id="flexRadioDefault2"
-                        />
-                      </div>
-                    </div>
+              <div class="py-4">
+                <div class="row row-cols-1 row-cols-md-2">
+                  <div class="mb-4">
+                    <label class="mb-2" style="font-weight: 500"
+                      >Let's Choose Audience</label
+                    >
+                    <select class="form-control rounded-2 shadow-none py-3">
+                      <option>Select Users</option>
+                      <option>All</option>
+                      <option>Tutors</option>
+                      <option>Parents</option>
+                      <option>Affiliate Partners</option>
+                      <option>Employees</option>
+                      <option>Employees</option>
+                      <option>Batch Tutoring</option>
+                    </select>
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#filterTutorsModal"
+                    >
+                      On Tutor Option Selection a filter will open!
+                    </button>
                   </div>
-                  <div class="py-4">
-                    <div class="mb-4">
-                      <label class="mb-2" style="font-weight: 500"
-                        >Select Users</label
-                      >
-                      <select class="form-control rounded-2 shadow-none py-3">
-                        <option>Select Users</option>
-                        <option>All</option>
-                        <option>Tutors</option>
-                        <option>Parents</option>
-                        <option>Affiliate Partners</option>
-                        <option>Employees</option>
-                        <option>Employees</option>
-                        <option>Batch Tutoring</option>
-                      </select>
-                      <button
-                        data-bs-toggle="modal"
-                        data-bs-target="#filterTutorsModal"
-                      >
-                        On Tutor Option Selection a filter will open!
-                      </button>
-                    </div>
-                    <div class="mb-4">
-                      <label class="mb-2" style="font-weight: 500"
-                        >Placement URL</label
-                      >
-                      <input
-                        class="form-control rounded-2 shadow-none py-3"
-                        placeholder="Input Link"
-                      />
-                    </div>
-                    <div class="mb-4">
-                      <label class="mb-2" style="font-weight: 500"
-                        >Navigate Link</label
-                      >
-                      <input
-                        class="form-control rounded-2 shadow-none py-3"
-                        placeholder="Input Link"
-                      />
-                      <button>
-                        This will show when "Property Click" is clicked!
-                      </button>
-                    </div>
-                    <div class="mb-4">
-                      <label class="mb-2" style="font-weight: 500"
-                        >Image Title</label
-                      >
-                      <input
-                        class="form-control rounded-2 shadow-none py-3"
-                        placeholder="Maximum 30 Character"
-                      />
-                    </div>
-                    <div class="mb-4">
-                      <label class="mb-2" style="font-weight: 500"
-                        >Upload Image</label
-                      >
-                      <div class="bg-white shadow-lg rounded-3 border p-md-5">
-                        <label
-                          for="file-input"
-                          class="p-4 pt-5 gap-2 rounded-3 d-flex justify-content-center align-items-center flex-column"
-                          style="
-                            border: #3378c2 2px dashed;
-                            background-color: #3378c20d;
-                            cursor: pointer;
-                          "
-                        >
-                          <img src="/images/uploadicon.svg" alt="Upload Icon" />
-                          <input type="file" id="file-input" hidden />
-                          <p class="mb-0" style="font-weight: 600">
-                            Drag & drop files
-                            <label
-                              for="file-input"
-                              style="
-                                cursor: pointer;
-                                text-decoration: underline;
-                                color: #3378c2;
-                              "
-                              >Browse</label
-                            >
-                          </p>
-                          <p class="text-muted">
-                            Supported formats: JPEG, PNG, GIF
-                          </p>
-                        </label>
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-end gap-4">
-                      <button class="btn btn-primary">Send</button>
-                      <button
-                        class="btn btn-primary"
-                        data-bs-toggle="modal"
-                        data-bs-target="#sendModal"
-                      >
-                        Send Later
-                      </button>
-                    </div>
+                  <div class="mb-4">
+                    <label class="mb-2" style="font-weight: 500"
+                      >Add Email</label
+                    >
+                    <input
+                      class="form-control rounded-2 shadow-none py-3"
+                      placeholder="Maximum 30 Character"
+                    />
                   </div>
                 </div>
-                <div
-                  class="tab-pane fade"
-                  id="unit"
-                  role="tabpanel"
-                  aria-labelledby="unit-tab"
-                >
-                  <div class="mt-4">
-                    <div class="d-flex gap-5">
-                      <div>
-                        <p class="mb-2" style="font-weight: 500">Popup Click</p>
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault1"
-                          checked
-                        />
-                      </div>
-                      <div>
-                        <p class="mb-2" style="font-weight: 500">
-                          Property Click
-                        </p>
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault2"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="py-4">
-                    <div class="mb-4">
-                      <label class="mb-2" style="font-weight: 500"
-                        >Select Users</label
-                      >
-                      <select class="form-control rounded-2 shadow-none py-3">
-                        <option>Select Users</option>
-                        <option>All</option>
-                        <option>Tutors</option>
-                        <option>Parents</option>
-                        <option>Affiliate Partners</option>
-                        <option>Employees</option>
-                        <option>Employees</option>
-                        <option>Batch Tutoring</option>
-                      </select>
-                      <button
-                        data-bs-toggle="modal"
-                        data-bs-target="#filterTutorsModal"
-                      >
-                        On Tutor Option Selection a filter will open!
-                      </button>
-                    </div>
-                    <div class="mb-4">
-                      <label class="mb-2" style="font-weight: 500"
-                        >Placement URL</label
-                      >
-                      <input
-                        class="form-control rounded-2 shadow-none py-3"
-                        placeholder="Input Link"
-                      />
-                    </div>
-                    <div class="mb-4">
-                      <label class="mb-2" style="font-weight: 500"
-                        >Navigate Link</label
-                      >
-                      <input
-                        class="form-control rounded-2 shadow-none py-3"
-                        placeholder="Input Link"
-                      />
-                      <button>
-                        This will show when "Property Click" is clicked!
-                      </button>
-                    </div>
-                    <div class="mb-4">
-                      <label class="mb-2" style="font-weight: 500"
-                        >Select Number</label
-                      >
-                      <textarea
-                        placeholder="Add numbers"
-                        class="form-control rounded-2 shadow-none"
-                        style="min-height: 100px"
-                      ></textarea>
-                    </div>
-                    <div class="mb-4">
-                      <label class="mb-2" style="font-weight: 500"
-                        >Image Title</label
-                      >
-                      <input
-                        class="form-control rounded-2 shadow-none py-3"
-                        placeholder="Maximum 30 Character"
-                      />
-                    </div>
-                    <div class="mb-4">
-                      <label class="mb-2" style="font-weight: 500"
-                        >Upload Image</label
-                      >
-                      <div class="bg-white shadow-lg rounded-3 border p-md-5">
-                        <label
-                          for="file-input"
-                          class="p-4 pt-5 gap-2 rounded-3 d-flex justify-content-center align-items-center flex-column"
-                          style="
-                            border: #3378c2 2px dashed;
-                            background-color: #3378c20d;
-                            cursor: pointer;
-                          "
-                        >
-                          <img src="/images/uploadicon.svg" alt="Upload Icon" />
-                          <input type="file" id="file-input" hidden />
-                          <p class="mb-0" style="font-weight: 600">
-                            Drag & drop files
-                            <label
-                              for="file-input"
-                              style="
-                                cursor: pointer;
-                                text-decoration: underline;
-                                color: #3378c2;
-                              "
-                              >Browse</label
-                            >
-                          </p>
-                          <p class="text-muted">
-                            Supported formats: JPEG, PNG, GIF
-                          </p>
-                        </label>
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-end gap-4">
-                      <button class="btn btn-primary">Send</button>
-                      <button
-                        class="btn btn-primary"
-                        data-bs-toggle="modal"
-                        data-bs-target="#sendModal"
-                      >
-                        Send Later
-                      </button>
-                    </div>
-                  </div>
+                <div class="mb-4">
+                  <label class="mb-2" style="font-weight: 500">SMS Title</label>
+                  <input
+                    class="form-control rounded-2 shadow-none py-3"
+                    placeholder="Maximum 30 Character"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label class="mb-2" style="font-weight: 500"
+                    >Create SMS Body</label
+                  >
+                  <textarea
+                    placeholder="Maximum 160 Character"
+                    class="form-control rounded-2 shadow-none"
+                    style="min-height: 100px"
+                  ></textarea>
+                </div>
+                <div class="d-flex justify-content-end gap-4">
+                  <button class="btn btn-primary">Send</button>
+                  <button
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#sendModal"
+                  >
+                    Send Later
+                  </button>
                 </div>
               </div>
             </div>
             <!-- submit form ends here -->
-            <!-- main content section starts here -->
             <!-- table starts here -->
             <div class="ps-3" style="padding-right: 13px">
               <div
@@ -539,6 +291,9 @@
                           <th scope="col" class="text-nowrap">Title</th>
                           <th scope="col" class="text-nowrap">Audience</th>
                           <th scope="col" class="text-nowrap">Status</th>
+                          <th scope="col" class="text-nowrap">
+                            Recurring Loop
+                          </th>
                           <th scope="col" class="text-nowrap">Action</th>
                         </tr>
                       </thead>
@@ -575,6 +330,7 @@
                           >
                             Pending
                           </td>
+                          <td>Null</td>
                           <td class="">
                             <div class="d-flex gap-4">
                               <button class="btn btn-info rounded-3 px-4">
@@ -605,24 +361,13 @@
                               06-06-23
                             </a>
                           </td>
-                          <td>Parent</td>
+                          <td>Tutor</td>
                           <td class="text-nowrap">
                             Lorem ipsum dolor sit amet...
                           </td>
                           <td class="text-nowrap text-info">455</td>
-                          <td>
-                            <div class="switch-toggle">
-                              <div class="button-check" id="button-check">
-                                <input
-                                  type="checkbox"
-                                  class="checkbox"
-                                  checked
-                                />
-                                <span class="switch-btn"></span>
-                                <span class="layer"></span>
-                              </div>
-                            </div>
-                          </td>
+                          <td>Completed</td>
+                          <td>Null</td>
                           <td class="">
                             <div class="d-flex gap-4">
                               <button class="btn btn-info rounded-3 px-4">
@@ -653,24 +398,13 @@
                               06-06-27
                             </a>
                           </td>
-                          <td>Affilate</td>
+                          <td>Tutor</td>
                           <td class="text-nowrap">
                             Lorem ipsum dolor sit amet...
                           </td>
                           <td class="text-nowrap text-info">681</td>
-                          <td>
-                            <div class="switch-toggle">
-                              <div class="button-check" id="button-check">
-                                <input
-                                  type="checkbox"
-                                  class="checkbox"
-                                  checked
-                                />
-                                <span class="switch-btn"></span>
-                                <span class="layer"></span>
-                              </div>
-                            </div>
-                          </td>
+                          <td class="text-primary">Recurring</td>
+                          <td>15 Days</td>
                           <td class="">
                             <div class="d-flex gap-4">
                               <button class="btn btn-info rounded-3 px-4">
@@ -778,6 +512,45 @@
               </div>
             </div>
             <!-- Pending Date time model ends here-->
+            <!-- Send Later model starts here-->
+            <div
+              class="modal fade"
+              id="sendModal"
+              tabindex="-1"
+              aria-labelledby="sendModalLabel"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog model-sm modal-dialog-slide-top"
+                style="max-width: 400px"
+              >
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <input type="datetime-local" class="form-control" />
+                    <div class="mt-3">
+                      <label for="gndr" class="form-label text-dark text-sm"
+                        >Recurring</label
+                      >
+
+                      <select
+                        id="gndr"
+                        class="shadow rounded-2 form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected value="">Select</option>
+                        <option value="Option 1">3 Days</option>
+                        <option value="Option 2">7 Days</option>
+                        <option value="Option 3">15 Days</option>
+                      </select>
+                    </div>
+                    <div class="d-flex justify-content-end mt-3">
+                      <button class="btn btn-primary">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Send Later model ends here-->
             <!-- Filter model starts here -->
             <div
               class="modal fade font-pop"
@@ -834,6 +607,15 @@
                               id="datet"
                             />
                           </div>
+                          <div class="pb-3">
+                            <label class="form-label text-dark text-sm"
+                              >Start Date</label
+                            >
+                            <input
+                              type="date"
+                              class="form-control shadow rounded-2"
+                            />
+                          </div>
                         </div>
                         <div
                           class="border-end mt-3"
@@ -878,6 +660,21 @@
                               <option value="Option 2">Option 2</option>
                               <option value="Option 3">Option 3</option>
                               <option value="Option 4">Option 4</option>
+                            </select>
+                          </div>
+                          <div class="pb-3">
+                            <label
+                              for="gndr"
+                              class="form-label text-dark text-sm"
+                              >Recurring Loop</label
+                            >
+
+                            <select
+                              id="gndr"
+                              class="shadow rounded-2 form-select"
+                              aria-label="Default select example"
+                            >
+                              <option selected value="">15 Days</option>
                             </select>
                           </div>
                         </div>
@@ -1187,29 +984,6 @@
               </div>
             </div>
             <!-- Tutor Filter Model ends here -->
-            <!-- Send Later model starts here-->
-            <div
-              class="modal fade"
-              id="sendModal"
-              tabindex="-1"
-              aria-labelledby="sendModalLabel"
-              aria-hidden="true"
-            >
-              <div
-                class="modal-dialog model-sm modal-dialog-slide-top"
-                style="max-width: 400px"
-              >
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <input type="datetime-local" class="form-control" />
-                    <div class="d-flex justify-content-end mt-3">
-                      <button class="btn btn-primary">Save</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Send Later model ends here-->
             <!-- main content section ends here -->
           </div>
         </div>
